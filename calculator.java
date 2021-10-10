@@ -1,8 +1,11 @@
-	import java.util.*;
+	package java_hm_wrk3;
+	
+	import java.util.Scanner;
+
 	public class Calculator {
 	    public static void main(String[] args)
 	    {
-	        System.out.println("Please enter two numbers in to the calculator:");
+	        System.out.println("enter two numbers in to the calculator:");
 	        Scanner userInput = new Scanner(System.in);
 	        int num1,num2;
 	        num1 = userInput.nextInt();
@@ -11,7 +14,8 @@
 	        System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
 	        int choose;
 	        choose = userInput.nextInt();
-	        switch (choose){
+	        
+			switch (choose){
 	        case 1:
 	            System.out.println(add( num1,num2));
 	            break;
